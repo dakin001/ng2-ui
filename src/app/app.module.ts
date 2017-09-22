@@ -15,10 +15,11 @@ import {
         AppComponent,
         All_PAGES.HomeComponent,
         All_PAGES.TestComponent,
+        All_PAGES.FormComponent,
     ],
     imports: [
         BrowserModule,
-        FormsModule,
+        FormsModule,       
         routing
     ],
     providers: [

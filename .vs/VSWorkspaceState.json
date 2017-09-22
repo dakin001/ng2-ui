@@ -1,8 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\pending",
+    "\\src",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\forms",
+    "\\src\\app\\pages\\tables",
+    "\\src\\app\\pages\\test",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app",
+  "SelectedNode": "\\src\\vendors",
   "PreviewInSolutionExplorer": false
 }
