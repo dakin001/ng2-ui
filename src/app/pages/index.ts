@@ -6,3 +6,8 @@ export {
     HomeComponent,
     TestComponent
 }
+
+export const All_PAGES = {
+    HomeComponent,
+    TestComponent
+}

@@ -6,16 +6,15 @@ import { AppComponent } from './app.component';
 import { routing } from './app.routes';
 import { PetService } from './services/index';
 import {
-    HomeComponent,
-    TestComponent
+    All_PAGES
 } from './pages/index';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        HomeComponent,
-        TestComponent
+        All_PAGES.HomeComponent,
+        All_PAGES.TestComponent,
     ],
     imports: [
         BrowserModule,
