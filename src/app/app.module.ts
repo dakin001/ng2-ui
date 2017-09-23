@@ -5,15 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { routing } from './app.routes';
 import { ALL_SERVICE } from './services/index';
-import {
-    All_PAGES
-} from './pages/index';
+import { All_PAGES } from './pages/index';
+import { All_COMPONENTS } from './components/index';
 
 
 @NgModule({
     declarations: [
         AppComponent,
-        All_PAGES
+        All_PAGES,
+        All_COMPONENTS
     ],
     imports: [
         BrowserModule,
