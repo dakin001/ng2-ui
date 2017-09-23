@@ -5,6 +5,6 @@ export {
     PetService
 }
 
-export const ALL_SERVICE = {
+export const ALL_SERVICE = [
     PetService
-}
+]

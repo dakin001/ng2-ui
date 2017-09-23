@@ -3,12 +3,13 @@
     "",
     "\\pending",
     "\\src",
+    "\\src\\app",
     "\\src\\app\\pages",
     "\\src\\app\\pages\\forms",
     "\\src\\app\\pages\\tables",
     "\\src\\app\\pages\\test",
     "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\vendors",
+  "SelectedNode": "\\src\\app\\app.component.html",
   "PreviewInSolutionExplorer": false
 }

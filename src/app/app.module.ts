@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routes';
-import { PetService } from './services/index';
+import { ALL_SERVICE } from './services/index';
 import {
     All_PAGES
 } from './pages/index';
@@ -13,9 +13,7 @@ import {
 @NgModule({
     declarations: [
         AppComponent,
-        All_PAGES.HomeComponent,
-        All_PAGES.TestComponent,
-        All_PAGES.FormComponent,
+        All_PAGES
     ],
     imports: [
         BrowserModule,
@@ -23,8 +21,12 @@ import {
         routing
     ],
     providers: [
-        PetService
+        ALL_SERVICE
     ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+// ?
+// require('./types/declare.d')

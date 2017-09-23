@@ -7,10 +7,11 @@ import { NgForm } from '@angular/forms';
 })
 export class FormComponent {
     title = 'app test';
-    @ViewChild('ngForm')
+    @ViewChild('ngForm1')
     ngForm1: NgForm;
 
     submit() {
+        console.log(this.ngForm1);
         if (!this.ngForm1.form.valid) {
             alert("表单验证失败");
         }
