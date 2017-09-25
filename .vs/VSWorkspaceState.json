@@ -4,12 +4,14 @@
     "\\pending",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\layout",
     "\\src\\app\\pages",
     "\\src\\app\\pages\\forms",
-    "\\src\\app\\pages\\tables",
+    "\\src\\app\\pages\\maps",
     "\\src\\app\\pages\\test",
     "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\pages\\forms\\form.component.html",
   "PreviewInSolutionExplorer": false
 }
