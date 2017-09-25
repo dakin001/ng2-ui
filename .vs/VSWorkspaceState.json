@@ -7,11 +7,9 @@
     "\\src\\app\\components",
     "\\src\\app\\layout",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\forms",
-    "\\src\\app\\pages\\maps",
-    "\\src\\app\\pages\\test",
-    "\\src\\app\\services"
+    "\\src\\app\\pages\\home",
+    "\\src\\app\\pages\\tables",
+    "\\src\\app\\types"
   ],
-  "SelectedNode": "\\src\\app\\pages\\forms\\form.component.html",
   "PreviewInSolutionExplorer": false
 }
