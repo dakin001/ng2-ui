@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'alert',
   templateUrl: './alert.component.html' 
 })
 export class AlertComponent {
-  title = 'app test';
+    @Input()
+    private shown: boolean = false;
 }

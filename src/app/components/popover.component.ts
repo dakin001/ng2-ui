@@ -1,18 +1,26 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
-declare var jQuery: any;
+import { Component, Directive, OnInit, ElementRef, Input, HostListener } from '@angular/core';
+declare var $: any;
 
 @Component({
     selector: 'popover',
-    templateUrl: './Popover.component.html'
+    templateUrl: './popover.component.html',
+    styles: ['popover {display:none}']
 })
 export class PopoverComponent implements OnInit {
     constructor(private el: ElementRef) {
+
+    }
+    ngOnInit() {
     }
 
-    ngOnInit() {
-        jQuery(this.el.nativeElement).popover();
-        jQuery('.popover').popover();
-        jQuery('[data-toggle="popover"]').popover()
+    @Input()
+    title: string;
+    @Input()
+    content: string;
 
+    getContent() {
+        this.content = $(this.el.nativeElement).html();
+        return this.content;
     }
 }
+

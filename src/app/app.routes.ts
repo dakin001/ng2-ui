@@ -5,7 +5,8 @@ import {
     TestComponent,
     FormComponent,
     TablesComponent,
-    MapsComponent
+    MapsComponent,
+    DemoComponent
 } from './pages/index';
 
 
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'form', component: FormComponent },
     { path: 'table', component: TablesComponent },
     { path: 'map', component: MapsComponent },
+    { path: 'demo', component: DemoComponent },
     { path: '**', component: HomeComponent }
     //{ path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 

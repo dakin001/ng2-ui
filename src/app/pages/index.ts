@@ -3,6 +3,7 @@ import { TestComponent } from './test/test.component';
 import { FormComponent } from './forms/form.component';
 import { TablesComponent } from './tables/tables.component';
 import { MapsComponent } from './maps/maps.component';
+import { DemoComponent } from './demo/demo.component';
 
 
 export {
@@ -10,7 +11,8 @@ export {
     TestComponent,
     FormComponent,
     MapsComponent,
-    TablesComponent
+    TablesComponent,
+    DemoComponent
 }
 
 export const All_PAGES = [
@@ -18,5 +20,6 @@ export const All_PAGES = [
     TestComponent,
     FormComponent, 
     TablesComponent,
-    MapsComponent
+    MapsComponent,
+    DemoComponent
 ]
