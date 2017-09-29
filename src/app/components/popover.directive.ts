@@ -26,6 +26,7 @@ export class PopoverDirective implements OnInit {
         }
     }
 
+    @HostListener("mouseover")
     show() {
         console.log(this.popover);
 
@@ -35,6 +36,7 @@ export class PopoverDirective implements OnInit {
             html: true,
         }).popover('show');
     }
+    @HostListener("mouseout")
     hide() {
         $(this.el.nativeElement).popover('hide');
     }
