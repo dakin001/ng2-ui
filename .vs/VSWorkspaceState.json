@@ -5,11 +5,11 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
-    "\\src\\app\\layout",
+    "\\src\\app\\directives",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\home",
-    "\\src\\app\\pages\\tables",
+    "\\src\\app\\pages\\demo",
     "\\src\\app\\types"
   ],
+  "SelectedNode": "\\src\\app\\directives\\tooltip.directive.ts",
   "PreviewInSolutionExplorer": false
 }

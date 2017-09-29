@@ -13,14 +13,13 @@ export class PopoverComponent implements OnInit {
     ngOnInit() {
     }
 
+    ngAfterViewInit() {
+        this.content = this.el.nativeElement.innerHTML;
+    }
+
     @Input()
     title: string;
     @Input()
-    content: string;
-
-    getContent() {
-        this.content = $(this.el.nativeElement).html();
-        return this.content;
-    }
+    content: string;   
 }
 

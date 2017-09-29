@@ -31,7 +31,7 @@ export class PopoverDirective implements OnInit {
 
         $(this.el.nativeElement).popover({
             title: this.popover.title,
-            content: this.popover.getContent(),
+            content: this.popover.content,
             html: true,
         }).popover('show');
     }
