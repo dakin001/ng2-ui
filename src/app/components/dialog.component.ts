@@ -1,9 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+declare var $: any;
 
 @Component({
- // selector: 'app-root',
-  templateUrl: './dialog.component.html' 
+    selector: 'dialog',
+    templateUrl: './dialog.component.html'
 })
-export class DialogComponent {
-  title = 'app test';
+export class DialogComponent   {
+    constructor(private el: ElementRef) {
+
+    }
+
+    ngAfterViewInit() {
+        //$(this.el.nativeElement).modal({
+        //})
+    }
 }
