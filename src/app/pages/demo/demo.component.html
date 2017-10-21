@@ -4,12 +4,12 @@
   <div> 这里是内容 </div>
 </popover>
 
-<a class="btn btn-default"  data-toggle="tooltip" data-placement="top" title="这里是Tooltip on top">Tooltip</a>
+<a class="btn btn-default" data-toggle="tooltip" data-placement="top" title="这里是Tooltip on top">Tooltip</a>
 
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
- Modal1
+  Modal1
 </button>
 
 <!-- Modal -->
@@ -31,29 +31,23 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary" (click)="confirmDialog.show()" >
-  dialog1(删除确认)
+<button type="button" class="btn btn-primary" (click)="confirmDialog.show()">
+  dialog1(customer)
 </button>
 
 <!-- Modal -->
 <x-dialog id="confirmDialog" #confirmDialog
           [dialogTitle]="'请确认'"
-          (onOK)="dialog1OK($event)"
-          >
+          (onOK)="dialog1OK($event)">
   你确认要删除吗?
 </x-dialog>
 
 
+<button type="button" class="btn btn-primary" (click)="testAlert.alert()">
+  show alert
+</button>
 <!-- alert  -->
-<div class="alert alert-primary" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <div>
-    这里是内容
-
-  </div>
-</div>
-
-
+<x-alert #testAlert>
+  这里是 alert
+</x-alert>
 
