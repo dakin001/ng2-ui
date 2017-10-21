@@ -31,14 +31,17 @@
   </div>
 </div>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dialog1">
-  dialog1
+<button type="button" class="btn btn-primary" (click)="confirmDialog.show()" >
+  dialog1(删除确认)
 </button>
 
 <!-- Modal -->
-<dialog id="dialog1">
-  这里是内容
-</dialog>
+<x-dialog id="confirmDialog" #confirmDialog
+          [dialogTitle]="'请确认'"
+          (onOK)="dialog1OK($event)"
+          >
+  你确认要删除吗?
+</x-dialog>
 
 
 <!-- alert  -->

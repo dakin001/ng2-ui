@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './demo.component.html' 
 })
 export class DemoComponent {
+
+    dialog1OK(e) {
+        console.log(e);
+    }
 }
