@@ -47,17 +47,21 @@
 </button>
 
 
-<button type="button" class="btn btn-primary" (click)="testAlert.alert()">
-  show alert
-</button>
-<!-- alert  -->
-<x-alert #testAlert>
-  这里是 alert
-</x-alert>
+<div>
+  <button type="button" class="btn btn-primary" (click)="testAlert.alert()">
+    show alert
+  </button>
+  <!-- alert  -->
+  <x-alert #testAlert>
+    这里是 alert
+  </x-alert>
+</div>
 
-<button type="button" class="btn btn-primary" (click)="addAlertInfo()">
-  add to alert Info
-</button>
-<button type="button" class="btn btn-primary" (click)="addAlertError()">
-  add to alert Error
-</button>
+<div>
+  <button type="button" class="btn btn-primary" (click)="addAlertInfo()">
+    site alert Info
+  </button>
+  <button type="button" class="btn btn-primary" (click)="addAlertError()">
+    site alert Error
+  </button>
+</div>

@@ -12,8 +12,6 @@ export class ConfirmComponent {
         private alertService: AlertService) {
 
         alertService.msgEvent.subscribe((x: AlertInfo) => {
-            console.log(' alertService.msgEvent.subscribe');
-            console.log(x);
             this.alertInfo = x;
             this.show();
         })
@@ -48,7 +46,6 @@ export class ConfirmComponent {
         this.$dialog.modal('hide')
 
         if (this.alertInfo.callBack != undefined) {
-            console.log(this.alertInfo.callBack);
             this.alertInfo.callBack(true)
         }
     }
