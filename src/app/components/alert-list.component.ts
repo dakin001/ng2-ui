@@ -13,7 +13,8 @@ declare var $: any;
                 opacity: '1'
             })),
             state('hide', style({
-                opacity: '0'
+                opacity: '0',
+                display: "none"
             })),
             transition('hide => show', animate('100ms ease-in')),
             transition('show => hide', animate('100ms ease-out'))
