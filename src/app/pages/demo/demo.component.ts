@@ -20,4 +20,11 @@ export class DemoComponent {
         })
     }
 
+    addAlertInfo() {
+        this.alertService.info("this is alert info test ");
+    }
+
+    addAlertError() {
+        this.alertService.error("this is alert error test ");
+    }
 }
