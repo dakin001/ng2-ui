@@ -2,21 +2,18 @@ import { Component, Input, ElementRef, trigger, animate, transition, state, styl
 import { AlertService } from "../services/index";
 import { AlertInfo, AlertType } from "../types/AlertInfo";
 declare var $: any;
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
     selector: 'x-alert-list',
     templateUrl: './alert-list.component.html',
 
-    animations: [  // 测试未通过
+    animations: [
         trigger('showHide', [
             state('show', style({
-                backgroundColor: '#eee',
-                transform: 'scale(1)'
+                opacity: '1'
             })),
             state('hide', style({
-                backgroundColor: '#cfd8dc',
-                transform: 'scale(1.1)'
+                opacity: '0'
             })),
             transition('hide => show', animate('100ms ease-in')),
             transition('show => hide', animate('100ms ease-out'))
@@ -35,28 +32,23 @@ export class AlertListComponent {
     }
 
     AlertInfoList: Array<AlertInfo> = [];
-    $html: any;
 
     ngAfterViewInit() {
         //this.el.nativeElement
-        this.$html = $(this.el.nativeElement.childNodes[1]);
+        //this.$html = $(this.el.nativeElement.childNodes[1]);
     }
 
     _addToAlertList(alert: any) {
-        this.AlertInfoList.push(alert);
+        // this.AlertInfoList.push(alert);
+        alert.isShow = 'show'
+        this.AlertInfoList.splice(0, 0, alert);
         if (this.AlertInfoList.length > 5) {
-           this.AlertInfoList.splice(0, 1);
+            this.AlertInfoList.splice(4, 1);
         }
 
         setTimeout(() => {
             alert.isShow = 'hide';
-        }, 1000)
-    }
-
-    alert() {
-        window.document.body.appendChild(this.$html[0]); ///需要测试。
-
-        this.$html.alert()
+        }, 1500)
     }
 
     getAlertStyleClass(alert) {

@@ -7,6 +7,7 @@ import { routing } from './app.routes';
 import { ALL_SERVICE } from './services/index';
 import { All_PAGES } from './pages/index';
 import { All_COMPONENTS } from './components/index';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { All_COMPONENTS } from './components/index';
     imports: [
         BrowserModule,
         FormsModule,       
-        routing
+        routing,
+        BrowserAnimationsModule
     ],
     providers: [
         ALL_SERVICE
