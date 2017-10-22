@@ -1,10 +1,13 @@
 import { PetService } from './pet.service';
+import { AlertService } from './alert.service';
 
 
 export {
-    PetService
+    PetService,
+    AlertService
 }
 
 export const ALL_SERVICE = [
-    PetService
+    PetService,
+    AlertService
 ]

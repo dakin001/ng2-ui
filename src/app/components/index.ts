@@ -3,6 +3,7 @@ import { AlertComponent } from './alert.component';
 import { PopoverComponent } from './popover.component';
 import { PopoverDirective } from './popover.directive';
 import { TooltipDirective } from '../directives/tooltip.directive';
+import { ConfirmComponent } from './confirm.component';
 
 
 
@@ -11,7 +12,8 @@ export {
     AlertComponent,
     PopoverComponent,
     PopoverDirective,
-    TooltipDirective
+    TooltipDirective,
+    ConfirmComponent
 }
 
 export const All_COMPONENTS = [
@@ -19,5 +21,6 @@ export const All_COMPONENTS = [
     AlertComponent,
     PopoverComponent,
     PopoverDirective,
-    TooltipDirective
+    TooltipDirective,
+    ConfirmComponent
 ]
